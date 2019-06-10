@@ -1,0 +1,362 @@
+/* RESET */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Oscar, Helvetica, Arial, sans-serif; /* default font */
+  font-weight: 600;
+}
+
+body * {
+  font-family: inherit;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: fixed;
+  background-color: white;
+}
+
+.upper-nav {
+  background-color: #f6f7f8;
+  text-align: center;
+  padding: 10px;
+}
+
+.lower-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lower-nav .logo {
+  display: flex;
+  justify-content: center;
+  position: center;
+  text-align: center;
+  padding-left: 70px;
+  padding-top: 20px;
+}
+
+.lower-nav .logo span {
+  position: center;
+  font-size: 20px;
+  color: #003bde;
+}
+
+.lower-nav .nav-bar {
+  margin-right: 60px;
+}
+
+.lower-nav .nav-bar ul {
+  display: inline-flex;
+  padding: 20px;
+}
+
+.lower-nav .nav-bar li {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.lower-nav .nav-bar span {
+  padding-left: 5px;
+  font-size: 10px;
+}
+
+.lower-nav .nav-bar .grey-hover {
+  transition: color 0.3s
+}
+
+.lower-nav .nav-bar .grey-hover:hover {
+  color: #7a838e;
+}
+
+.lower-nav .nav-bar .grey-text {
+  color: #7a838e;
+}
+
+.lower-nav .nav-bar .black-hover {
+  transition: color 0.3s
+}
+
+.lower-nav .nav-bar .black-hover:hover {
+  color: black;
+}
+
+.lower-nav .nav-bar .black-hover {
+  transition: color 0.3s
+}
+
+.lower-nav .nav-bar .blue-hover:hover {
+  color: #003bde;
+}
+
+.lower-nav .nav-bar .left-box {
+  border: solid #f6f7f8 1px;
+  color: #003bde;
+  transition: border 0.3s;
+  border-radius: 10%;
+}
+
+.lower-nav .nav-bar .left-box:hover {
+  border: solid #003bde 1px;
+}
+
+.lower-nav .nav-bar .right-box {
+  border: solid #003bde 1px;
+  background-color: #003bde;
+  color: white;
+  transition: background 0.3s;
+  transition: color 0.3;
+  border-radius: 7%;
+  margin-left: 15px;
+}
+
+.lower-nav .nav-bar .right-box:hover {
+  background: white;
+  color: #003bde;
+}
+
+.main-images {
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  height: 520px;
+}
+
+.main-images .small-image {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: lightgrey;
+  background-image: url(file:///Users/arunmassand/Desktop/GA/Oscar/images/hero/desktop-hero-1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 520px;
+}
+
+.main-images .small-image h1 {
+  font-size: 40px;
+  color: white;
+  margin-left: 80px;
+  margin-top: 150px;
+}
+
+.margin .small-image .button {
+  width: 30%;
+  padding: 10px;
+  border: solid white 1.5px;
+}
+
+.main-images .small-image .button p {
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 20px;
+  width: 50%;
+  color: #003bde;
+  background-color: white;
+  border: solid white 1px;
+  border-radius: 5%;
+  transition: background 0.3s;
+  transition: color 0.3s;
+}
+
+.main-images .small-image .button p:hover {
+  background: none;
+  color: white;
+}
+
+.main-images .right {
+  width: 50%;
+  background-image: url(file:///Users/arunmassand/Desktop/GA/Oscar/images/hero/desktop-hero-2.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto 520px;
+}
+
+.mission {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding-left: 175px;
+  padding-right: 175px;
+}
+
+.mission p {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.mission h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.black-text {
+  color: black;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.testimonials .container {
+  margin: 1%;
+  width: 22%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-style: italic;
+  color: darkgrey;
+  line-height: 30px;
+}
+
+.testimonials .container .text {
+  line-height: 30px;
+}
+
+.testimonials .container .person {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.testimonials .container .person img {
+  width: 30%;
+  border-radius: 100%;
+  margin: 10px;
+}
+.testimonials .container .person .caption  {
+  line-height: normal;
+  align-self: flex-start;
+}
+
+
+.divider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.divider .line {
+  height: 3px;
+  width: 75%;
+  background-color: lightgrey;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.year-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  background-color: darkgrey;
+}
+
+.year-review {
+  color: white;
+  line-height: 40px;
+}
+
+.year-review h1 {
+  font-size: 40px;
+}
+.year-review .button {
+  background-color: white;
+  border: solid white 1px;
+  color: #003bde;
+  font-size: 30px;
+  transition: background 0.3s;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.year-review .button:hover {
+  background: none;
+}
+
+.long-divider {
+   height: 1px;
+   background-color: lightgrey;
+   margin-bottom: 50px;
+   margin-top: 50px;
+}
+
+.source p {
+  font-size: 14px;
+  margin: 50px;
+  color: #7a838e;
+}
+
+.footer {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.footer .second-col {
+  color: #7a838e;
+  font-size: 14px;
+}
+
+.footer .second-col ul {
+  padding: 30px;
+}
+
+.footer .second-col ul li {
+  padding: 10px;
+  transition: color 0.2s;
+}
+
+.footer .second-col ul li:hover {
+  color: black;
+}
+
+.col-title {
+  color: black;
+  font-family: avenir-regular,Helvetica,sans-serif;
+  font-size: 12px;
+}
+
+.newsletter-title {
+  color: black;
+  font-family: avenir-regular,Helvetica,sans-serif;
+  font-size: 14px;
+  margin-right: 100px;
+}
+
+.footer form {
+  font-family: avenir-regular,Helvetica,sans-serif;
+  font-size: 14px;
+
+}
